@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TMDB</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <span>Buscador de Filmes</span>
+    </header>
+
+    <main>
+        <div class="search">
+            <h2>Pesquisar por filme</h2>
+
+            <input type="text" id="searchInput" name="searchInput" placeholder="Nome do Filme" value="Harry" />
+            <button class="button" id="searchButton" onclick="tmdb.pesquisar()">Pesquisar</button>
+            <button class="button" id="clearButton" onclick="tmdb.limpar()">Limpar</button>
+
+            <span class="result-title" id="result_title" style="display: none;">
+                Resultados:<span id="searchNumbers"></span>
+            </span>
+
+            <ul class="results" id="results">
+                <!-- <li>
+                    <img src="https://image.tmdb.org/t/p/w500/yVksBmUf2uwEruDttP3XtHamS8q.jpg">
+                    <span>It a coisa</span>
+                    <p>Quando o mal revisita a cidade de Derry, o "Clube dos Falhados" junta-se 27 anos depois, apesar
+                        de os seus membros serem já adultos e terem seguido caminhos diferentes. Quando o mal revisita a cidade de Derry, o "Clube dos Falhados" junta-se 27 anos depois, apesar
+                        de os seus membros serem já adultos e terem seguido caminhos diferentes.</p>
+                    <button>Salvar</button>
+                </li> -->
+               
+            </ul>
+
+            
+        </div>
+
+        <div class="search">
+            <h2>Filmes Salvos</h2>
+
+            <ul class="results" id="results_save">
+                <!-- <li>
+                    <img src="https://image.tmdb.org/t/p/w500/yVksBmUf2uwEruDttP3XtHamS8q.jpg">
+                    <span>It a coisa</span>
+                    <p>Quando o mal revisita a cidade de Derry, o "Clube dos Falhados" junta-se 27 anos depois, apesar
+                        de os seus membros serem já adultos e terem seguido caminhos diferentes. Quando o mal revisita a cidade de Derry, o "Clube dos Falhados" junta-se 27 anos depois, apesar
+                        de os seus membros serem já adultos e terem seguido caminhos diferentes.</p>
+                    <button>Excluir</button>
+                </li> -->
+            </ul>
+        </div>
+    </main>
+
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
